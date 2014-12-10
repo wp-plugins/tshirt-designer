@@ -62,7 +62,11 @@ https://www.youtube.com/watch?v=w_2qdMQqNQQ
 == Screenshots ==
 
 1. screenshot-1
-
+2. screenshot-2
+3. screenshot-3
+4. screenshot-4
+5. screenshot-5
+6. screenshot-6
 
 
 
