@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+/*CSS front page*/
+
+.tshirt-designer-container {
+  background: none repeat scroll 0 0 #f4f4f4;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+}
+
+.tshirt-designer-container .tools-input {
+  background: none repeat scroll 0 0 #5cbfdb;
+  display: inline-block;
+  height: 585px;
+  vertical-align: top;
+  width: 35%;
+}
+.tshirt-designer-container .playground {
+  background: none repeat scroll 0 0 rgb(92, 219, 170);
+  display: inline-block;
+  height: 585px;
+  width: 60%;
+}
+
+.tshirt-designer-container .playground .canvas-menu {
+  height: 35px;
+  width: 100%;
+}
+
+
+
+.tshirt-designer-container .playground .canvas-menu span:hover {
+  border-bottom: 3px solid #d69c1d;
+  cursor: pointer;
+}
+
+.tshirt-designer-container .playground .canvas-menu .front {
+  background: none repeat scroll 0 0 #ffb921;
+  border-right: 1px solid #d69c1d;
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  padding: 2px 6px;
+}
+
+.tshirt-designer-container .playground .canvas-menu .back {
+  background: none repeat scroll 0 0 #ffb921;
+  border-right: 1px solid #d69c1d;
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  padding: 2px 6px;
+}
+
+.tshirt-designer-container .playground .canvas-menu .preview {
+  background: none repeat scroll 0 0 #ffb921;
+  border-right: 1px solid #d69c1d;
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  padding: 2px 6px;
+}
+
+.tshirt-designer-container .playground .canvas-menu .loading-side {
+  background: url("loading-side.gif") no-repeat scroll 23px 7px rgb(255, 185, 33);
+  display: none;
+  float: left;
+  margin-top: 5px;
+  padding: 2px 6px;
+  width: 50px;
+}
+
+
+.tshirt-designer-container .playground .canvas {
+  background-size: 100% auto !important;
+  clear: both;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+}
+
+.tshirt-designer-container .playground .canvas img {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+.tshirt-designer-container .tools-input .td-navs {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.tshirt-designer-container .tools-input .td-nav {
+  background: none repeat scroll 0 0 #5cdb7a;
+  border-right: 1px solid #48b261;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  margin: 5px 0 0;
+  padding: 3px 10px;
+}
+.tshirt-designer-container .tools-input .td-nav:hover{
+	  border-bottom: 3px solid #48b261;
+	  }
+
+.tshirt-designer-container .tools-input .td-nav.active {
+  font-weight: bold;
+}
+
+.tshirt-designer-container .tools-input .td-nav-boxs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.tshirt-designer-container .tools-input .td-nav-box {
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+
+.tshirt-designer-container .tools-input .product-list {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.tshirt-designer-container .tools-input .product-list img {
+  border: 1px solid #5cbfdb;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 0 2px;
+  max-width: 50px;
+}
+
+.tshirt-designer-container .tools-input .product-list img:hover {
+  border: 1px solid #585858;
+}
+
+
+
+
+
+.tshirt-designer-container .tools-input .sticker-list {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.tshirt-designer-container .tools-input .sticker-list img {
+  border: 1px solid #5cbfdb;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 0;
+  max-width: 50px;
+}
+
+.tshirt-designer-container .tools-input .sticker-list img:hover {
+  border: 1px solid #585858;
+}
+
+
+.tshirt-designer-container .canvas .sticker {
+  height: 100px;
+  position: absolute !important;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  width: 100px;
+}
+
+
+.tshirt-designer-container .canvas .sticker img {
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 100%;
+  width: 100%;
+}
+
+
+.tshirt-designer-container .canvas .sticker-text {
+  height: auto;
+}
+.tshirt-designer-container .canvas .sticker-text p{}
+
+
+
+
+
+.tshirt-designer-container .canvas .stickeractive:hover {
+  box-shadow: 0 0 3px -1px #000;
+}
+
+.tshirt-designer-container .canvas .sticker:hover .ui-resizable-handle{  
+background: url("resize.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+
+
+
+.tshirt-designer-container .sticker-option {
+  display: none;
+  padding-top: 20px;
+}
+
+
+.tshirt-designer-container .sticker-text-option {
+  display: none;
+  padding: 10px 0;
+}
+
+.tshirt-designer-container .sticker-text-option input {
+  margin-bottom: 10px;
+}
+
+
+
+.sticker-option > label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tshirt-designer-container .sticker-option .remove-sticker {
+  background: url("delete.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  cursor:pointer;
+}
+.tshirt-designer-container .sticker-option .layer {
+  display: inline-block;
+  height: 20px;
+  padding: 0 0 0 5px;
+  vertical-align: top;
+  width: 51px;
+}
+
+.tshirt-designer-container .sticker-option .opacity {
+  display: inline-block;
+  height: 20px;
+  padding: 0 0 0 5px;
+  vertical-align: top;
+  width: 51px;
+}
+
+.tshirt-designer-container .sticker-option .rotate {
+  display: inline-block;
+  height: 20px;
+  padding: 0 0 0 5px;
+  vertical-align: top;
+  width: 51px;
+}
+
+
+
+.tshirt-designer-container .preview-holder {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.tshirt-designer-container .preview-holder .preview-close {
+  background: url("preview-close.png") no-repeat scroll 5px 5px rgb(247, 98, 24);
+  box-shadow: 0 0 3px -2px rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  transition: all 0.3s ease 0s;
+  width: 35px;
+}
+
+
+
+
+.tshirt-designer-container .preview-holder .preview-close:hover {
+  width: 50px;
+}
+
+
+
+
+.tshirt-designer-container .preview-holder img {
+  border-radius: 0;
+  box-shadow: none;
+  margin: 40px auto 0;
+  position: relative;
+  z-index: 2147483647;
+}
+
+
+.tshirt-designer-container .preview-holder .preview-save {
+  background: url("preview-save.png") no-repeat scroll 5px 5px rgb(247, 98, 24);
+  box-shadow: 0 0 3px -2px rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 90px;
+  transition: all 0.3s ease 0s;
+  width: 35px;
+}
+
+.tshirt-designer-container .preview-holder .preview-save:hover {
+  width: 50px;
+}
+
+
+
+.tshirt-designer-container .preview-holder .preview-loading {
+  background: url("loading.gif") no-repeat scroll 5px 5px rgb(247, 98, 24);
+  box-shadow: 0 0 3px -2px rgb(0, 0, 0);
+  cursor: pointer;
+  display: none;
+  float: right;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 130px;
+  transition: all 0.3s ease 0s;
+  width: 35px;
+}
+
+.tshirt-designer-container .preview-holder .preview-loading:hover {
+  width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tshirt-designer-container .preview-images {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.tshirt-designer-container .preview-images div {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+
+.tshirt-designer-container .front-image-info, .tshirt-designer-container .back-image-info {
+  background: none repeat scroll 0 0 rgb(255, 185, 33);
+  bottom: 8px;
+  color: rgb(104, 104, 104);
+  font-size: 12px;
+  left: 0;
+  padding: 0 3px;
+  position: absolute;
+}
+
+
+.tshirt-designer-container .preview-images img {
+  border: 1px solid;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  vertical-align: top;
+  width: 100px;
+}
+
+
+.tshirt-designer-container .preview-images .cart {
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+
+.tshirt-designer-container .preview-images .single_add_to_cart_button
+ {
+  background: none repeat scroll 0 0 rgb(255, 185, 33);
+  border-right: 1px solid rgb(214, 156, 29);
+  padding: 4px 6px;
+}
+
+.tshirt-designer-container .preview-images .input-text {
+  border-radius: 0;
+  padding: 4px 6px;
+}
+
+.tshirt-designer-container .inserttext {
+  background: none repeat scroll 0 0 rgb(255, 185, 33);
+  cursor: pointer;
+  display: inline-block;
+  margin: 11px 0;
+  padding: 2px 6px;
+}
+
+.tshirt-designer-container .inserttext:hover {
+  border-bottom: 3px solid rgb(214, 156, 29);
+
+}
+
+
+
+
+/************************/
+.ui-rotatable-handle {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+
+
+
+
+

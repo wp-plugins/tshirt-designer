@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Admin CSS*/
+
+.para-settings {
+  margin: 20px 0;
+}
+
+
+.para-settings .option-box > textarea,
+.para-settings .option-box > p
+ {
+	width:100%;
+}
+
+.para-settings .option-box > input {
+  width: 50%;
+}
+
+
+.para-settings h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+
+
+
+
+
+
+
+.para-settings .option-box {
+  border-left: 3px solid rgb(255, 255, 255);
+  margin: 10px 0;
+  padding: 10px;
+}
+
+
+
+.para-settings .option-box:hover {
+  background: #e6e6e6;
+  border-left: 3px solid #11b063;
+}
+
+
+.para-settings .option-box .option-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.para-settings .option-box .option-info {
+  color: rgb(73, 147, 14);
+  font-size: 13px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.para-settings ul.tab-nav {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.para-settings ul.tab-nav li {
+  background: none repeat scroll 0 0 rgb(230, 230, 230);
+  border-left: 1px solid rgb(199, 199, 199);
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 8px 15px;
+}
+
+.para-settings ul.tab-nav li.active{
+	background:#d8d6d6;
+	border-top:2px solid #11b063;
+	padding-top:6px;
+	font-weight: bold;
+	}
+.para-settings ul.box {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.para-settings ul.box li.tab-box {
+  border: 1px solid rgb(153, 153, 153);
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
+
+.para-settings .hidden-mob {
+
+  display: none;
+
+}
+
+
+/* data-table */
+
+.para-settings .data-table {
+  border: 1px solid rgb(199, 199, 199);
+  border-collapse: collapse;
+}
+
+.para-settings .data-table tr {
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+
+.para-settings .data-table th {
+  border-bottom: 2px solid rgb(253, 197, 28);
+  border-collapse: collapse;
+  padding: 10px 20px 10px 8px;
+}
+
+
+.para-settings .data-table td {
+  border-bottom: 1px solid rgb(199, 199, 199);
+  border-collapse: collapse;
+  padding: 10px 20px 10px 8px;
+}
+
+.para-settings .button {
+  margin: 20px 0;
+}
+
+.para-settings .success {
+  background: none repeat scroll 0 0 rgb(105, 221, 157);
+  padding: 5px 10px;
+  display:none;
+}
+
+
+/*para-form-table*/
+
+
+.para-settings .para-form-table {
+
+  border-collapse: collapse;
+}
+
+.para-settings .para-form-table tr {
+
+}
+
+
+.para-settings .para-form-table th {
+  border-collapse: collapse;
+  padding: 10px 20px 10px 8px;
+  text-align: left;
+  vertical-align: top;
+  width: 200px;
+}
+
+.para-settings .para-form-table td {
+
+  border-collapse: collapse;
+  padding: 10px 20px 10px 8px;
+}
+
+.para-settings pre {
+
+}
+
+
+@media all and (max-width: 799px) {
+	
+
+	
+	.para-settings ul.tab-nav li {
+	  display: block;
+	  float: none;
+	
+	}
+	
+	.para-settings ul.tab-nav li.active{
+		font-weight: bold;
+		}	
+	
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

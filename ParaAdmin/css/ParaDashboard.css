@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*para-dashboard*/
+
+.para-dashboard {
+  background: none repeat scroll 0 0 rgb(91, 116, 145);
+  padding: 10px;
+}
+
+.para-dashboard .dash-box {
+  background: none repeat scroll 0 0 rgb(93, 126, 163);
+  border: 1px solid rgb(122, 170, 223);
+  display: inline-block;
+  height: auto;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  margin-top: 0;
+  overflow: hidden;
+  padding-bottom: 30px;
+  vertical-align: top;
+  width: 350px;
+}
+
+.para-dashboard .dash-box-title {
+  background: none repeat scroll 0 0 rgb(100, 140, 186);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.para-dashboard .dash-box-title .fa {
+  padding-right: 10px;
+}
+
+.para-dashboard .dash-box-info {
+  color: rgb(238, 238, 238);
+  font-size: 12px;
+  padding: 10px;
+}
+
+.para-dashboard .dash-box .total-online {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 30px 10px 10px;
+  text-align: center;
+}
+
+.para-dashboard .dash-box .total-session {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 30px 10px 10px;
+  text-align: center;
+}
+
+
+
+
+.para-dashboard .dash-box .para-data-table {
+  border: 1px solid rgb(221, 221, 221);
+  border-collapse: collapse;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.para-dashboard .dash-box .para-data-table th {
+  padding: 7px;
+}
+.para-dashboard .dash-box tr {
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.para-dashboard .dash-box .para-data-table td {
+  padding: 5px;
+}
+
+.para-dashboard .dash-box .para-data-table a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
