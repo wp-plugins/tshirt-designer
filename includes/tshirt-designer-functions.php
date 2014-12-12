@@ -87,7 +87,7 @@ function tshirt_designer_display($atts, $content = null ) {
 	$html .= '<ul class="td-navs"> 
 					<li nav="1" class="td-nav td-nav1 active">Product</li>
 					<li nav="2" class="td-nav td-nav2">Sticker</li>
-					<!--<li nav="3" class="td-nav td-nav3">Text</li>-->
+					<li nav="3" class="td-nav td-nav3">Text</li>
 				</ul> <!-- tab-nav end -->
 				 
 				<ul class="td-nav-boxs">
