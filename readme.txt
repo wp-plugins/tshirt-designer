@@ -17,7 +17,7 @@ Also text can be use with fancy font family, font size and color.
 
 
 ### T-Shirt Designer by http://paratheme.com
-* [Upgrade to Premium!&raquo;](http://paratheme.com/items/t-shirt-designer-woocommerce-ready-online-product-designer/)
+* [Upgrade to Premium!&raquo;](http://paratheme.com/items/t-shirt-designer-woocommerce-ready-online-tshirt-designer/)
 * [Watch Video Tutorial!&raquo;](https://www.youtube.com/watch?v=w_2qdMQqNQQ)
 
 
