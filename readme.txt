@@ -23,14 +23,26 @@ Also text can be use with fancy font family, font size and color.
 * [Watch Video Tutorial!&raquo;](https://www.youtube.com/watch?v=w_2qdMQqNQQ)
 
 
-<strong>Plugin Features</strong><br />
+<strong>Plugin Features</strong>
 
 * woocommerce ready.
 * unlimited sticker or art.
 * text art.
 * front and back image of tshirt.
 * design preview.
-* z-index, opacity of sticker.
+* z-index, opacity, rotation of sticker.
+
+
+<strong>Premium Version Extra Features</strong>
+
+* Front-end Ajax sticker upload.
+* Ajax load more product(T-Shirt) list.
+* Ajax load more sticker list.
+* Number of items on Ajax list.
+* Open option on click sticker or text on canvas.
+* Text bold & italic form by click.
+* Max upload file size for sticker.
+* Restriction for upload sticker to visitor, user only or none.
 
 Please watch this video tutorial
 
