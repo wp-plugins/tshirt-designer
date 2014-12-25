@@ -69,6 +69,9 @@
   padding: 2px 6px;
 }
 
+
+
+
 .tshirt-designer-container .playground .canvas-menu .loading-side {
   background: url("loading-side.gif") no-repeat scroll 23px 7px rgb(255, 185, 33);
   display: none;
@@ -141,6 +144,8 @@
 }
 
 
+
+
 .tshirt-designer-container .tools-input .product-list {
   margin: 0;
   padding: 10px 0;
@@ -153,6 +158,7 @@
   cursor: pointer;
   margin: 0 2px;
   max-width: 50px;
+  vertical-align: top;
 }
 
 .tshirt-designer-container .tools-input .product-list img:hover {
@@ -161,10 +167,40 @@
 
 
 
+.tshirt-designer-container .tools-input .product-load-more,
+.tshirt-designer-container .tools-input .sticker-load-more {
+  background: none repeat scroll 0 0 rgb(255, 185, 33);
+  display: inline-block;
+  padding: 3px 5px;
+  text-align: center;
+}
 
+.tshirt-designer-container .tools-input .loading {
+  background: url("loading-side.gif") no-repeat scroll 6px 8px rgb(255, 185, 33);
+  padding-left: 30px;
+}
+
+#sticker-upload-container .loading {
+  background: url("loading-side.gif") no-repeat scroll 6px 7px rgb(255, 185, 33);
+  display: none;
+  font-size: 12px;
+  padding: 4px 10px 4px 30px;
+  width: auto;
+}
+
+.tshirt-designer-container #sticker-uploader {
+  background: none repeat scroll 0 0 rgb(255, 185, 33);
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  margin: 5px 0;
+  padding: 3px 10px;
+  text-decoration: none;
+  width: auto;
+}
 
 .tshirt-designer-container .tools-input .sticker-list {
   margin: 0;
+  overflow-y: scroll;
   padding: 10px 0;
 }
 
@@ -237,6 +273,28 @@ background: url("resize.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   margin-bottom: 10px;
 }
 
+.tshirt-designer-container .sticker-text-option .sticker-text-bold {
+  background: url("bold.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 20px;
+  vertical-align: top;
+  width: 20px;
+}
+
+.tshirt-designer-container .sticker-text-option .sticker-text-bold.active {
+  border: 2px solid rgb(221, 221, 221);
+}
+
+.tshirt-designer-container .sticker-text-option .sticker-text-italic {
+  background: url("italic.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+}
+.tshirt-designer-container .sticker-text-option .sticker-text-italic.active {
+  border: 2px solid rgb(221, 221, 221);
+}
 
 
 .sticker-option > label {
@@ -251,6 +309,19 @@ background: url("resize.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   width: 16px;
   cursor:pointer;
 }
+
+.tshirt-designer-container .sticker-text-option .remove-sticker {
+  background: url("delete.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+
+
+
+
 .tshirt-designer-container .sticker-option .layer {
   display: inline-block;
   height: 20px;

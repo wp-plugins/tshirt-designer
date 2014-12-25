@@ -3,8 +3,70 @@ jQuery(document).ready(function($)
 
 
 
+	$(document).on('click','.sticker-load-more',function(){
+		
+		$(this).addClass("loading");
+		$(this).text("loading..");
+		
+		var offset = parseInt($(this).attr("offset"));
+		var per_page = parseInt($(this).attr("per_page"));		
+		
+		$.ajax(
+			{
+		type: 'POST',
+		url: tshirt_designer_ajax.tshirt_designer_ajaxurl,
+		data: {"action": "tshirt_designer_get_sticker_list_ajax","offset":offset},
+		success: function(data)
+				{
+					
+					$(".sticker-list").append(data);
+					$('.sticker-load-more').removeClass("loading");
+					$('.sticker-load-more').html("Load More...");
+					
+					var offest_last = parseInt(offset+per_page);
+					$(".sticker-load-more").attr("offset",offest_last);
+					
+					}
+			});
+		
+	})
 
-			
+
+	$(document).on('click','.product-load-more',function(){
+		
+		$(this).addClass("loading");
+		$(this).text("loading..");
+		
+		var offset = parseInt($(this).attr("offset"));
+		var per_page = parseInt($(this).attr("per_page"));		
+		
+		$.ajax(
+			{
+		type: 'POST',
+		url: tshirt_designer_ajax.tshirt_designer_ajaxurl,
+		data: {"action": "tshirt_designer_get_product_list_ajax","offset":offset},
+		success: function(data)
+				{
+					
+					$(".product-list").append(data);
+					$('.product-load-more').removeClass("loading");
+					$('.product-load-more').html("Load More...");
+					
+					var offest_last = parseInt(offset+per_page);
+					$(".product-load-more").attr("offset",offest_last);
+					
+					}
+			});
+		
+	})
+
+
+
+
+
+
+
+
 
 
 	$(document).on('click','.preview-save',function(){
@@ -193,10 +255,54 @@ jQuery(document).ready(function($)
 		var font_color = $(this).val();	
 		$('.canvas #sticker-'+stickerid+' p').css('color','#'+font_color);
 		$('.canvas #sticker-'+stickerid).css('color',font_color);
-		
-
-		
 		})
+		
+		
+	$(document).on('click', '.sticker-text-bold', function(){
+		
+		var stickerid = $('.sticker-option').attr('stickerid');
+		var $this = $(this);
+		
+		 if($this.hasClass('active')){
+		   $this.removeClass('active').addClass('inactive')
+		   $('.canvas #sticker-'+stickerid+' p').css('font-weight','normal');
+		 }else{
+		   $this.removeClass('inactive').addClass('active');
+		   $('.canvas #sticker-'+stickerid+' p').css('font-weight','bold');
+		 }
+
+		//$('.canvas #sticker-'+stickerid).css('font-weight','bold');
+		})
+		
+		
+	$(document).on('click', '.sticker-text-italic', function(){
+		
+		var stickerid = $('.sticker-option').attr('stickerid');
+		var $this = $(this);
+		
+		 if($this.hasClass('active')){
+			 
+		   $this.removeClass('active').addClass('inactive')
+		   $('.canvas #sticker-'+stickerid+' p').css('font-style','normal');
+		 }else{
+			 
+		   $this.removeClass('inactive').addClass('active');
+		   $('.canvas #sticker-'+stickerid+' p').css('font-style','italic');
+		 }
+
+		//$('.canvas #sticker-'+stickerid).css('font-weight','bold');
+		})		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	$(document).on('change', '.sticker-text-input', function(){
 
@@ -208,25 +314,66 @@ jQuery(document).ready(function($)
 		
 
 	$(document).on('click', '.sticker-text', function(){
+
+
+		//$('.sticker p').circleType({radius: 384});
+		
+		//activating text tab
+		$(".td-nav.active").removeClass("active");
+		$('.td-nav3').addClass("active");
+		$(".td-nav-box").css("display","none");
+		$(".td-nav-box3").css("display","block");
+		
 		
 		$('.sticker-text-option').fadeIn('slow');
 		
 		var stickerid = $(this).attr('stickerid');
 		var text = $(this).text();
 		var font_size = parseInt($(this).css('font-size'));		
-		var font_name = $(this).css('font-family');
-		//var font_color = $(this).css('color');		
-
+		var font_name = $(this).children().css('font-family');
+		var font_color = $(this).children().css('color');		
+			
 		$('.sticker-text-input').val(text);
 		$('.sticker-text-id').val(stickerid);
 		$('.sticker-text-font-size').val(font_size);
 		$('.sticker-text-font-name').val(font_name);
-		//$('.sticker-text-font-color').val(rgb2hex(font_color));						
 		
+		$('.sticker-text-font-color').val(rgb2hex(font_color));
+		$('.sticker-text-font-color').css('background-color',font_color);		
+		
+		
+							
+		function rgb2hex(rgb) {
+				 if (  rgb.search("rgb") == -1 ) {
+					  return rgb;
+				 } else {
+					  rgb = rgb.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+))?\)$/);
+					  function hex(x) {
+						   return ("0" + parseInt(x).toString(16)).slice(-2);
+					  }
+					  return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]); 
+				 }
+			}
+			
+			
 		})
 
-
+	$(document).on('click', '.sticker-img', function(){
+		
+		//activating sticker tab
+		$(".td-nav.active").removeClass("active");
+		$('.td-nav2').addClass("active");
+		
+		$(".td-nav-box").css("display","none");
+		$(".td-nav-box2").css("display","block");
+		
+		})
+		
+		
+		
+		
 	$(document).on('click', '.sticker', function(){
+		
 		
 		$('.stickeractive').removeClass("stickeractive");
 		$(this).addClass("stickeractive");
@@ -236,8 +383,7 @@ jQuery(document).ready(function($)
 		var stickerid = $(this).attr('stickerid');
 		var z_index = parseInt($(this).css('zIndex'));
 		var opacity = $(this).css('opacity');
-		var rotate = $(this).rotationDegrees();
-
+		var rotate = $(this).children().rotationDegrees();
 		
 		$('.sticker-option').attr('stickerid',stickerid);
 		$('.sticker-option .layer').val(z_index);
@@ -258,7 +404,7 @@ jQuery(document).ready(function($)
 		
 			var sticker_src = $(this).attr('src');
 			var stickerid = $(this).attr('stickerid');
-			$(".canvas").prepend('<div class="sticker" id="sticker-'+stickerid+'" stickerid="'+stickerid+'" style=" z-index:10;"><img rotate="0" src='+sticker_src+' /></div>');
+			$(".canvas").prepend('<div class="sticker sticker-img" id="sticker-'+stickerid+'" stickerid="'+stickerid+'" style=" z-index:10;"><img rotate="0" src='+sticker_src+' /></div>');
 
 			$('.sticker').draggable();
 			$('.sticker').resizable();
@@ -283,7 +429,9 @@ jQuery(document).ready(function($)
 
 			$('.sticker').draggable();
 			$('.sticker').resizable();
-			//$('.sticker img').rotatable();
+			//$('.sticker').rotatable();
+			
+			
 			
 			
 		  }); 

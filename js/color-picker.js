@@ -2,7 +2,7 @@
 		{	
 
 
-			$('.sticker-text-font-color').wpColorPicker();
+			//$('.sticker-text-font-color').wpColorPicker();
 					
 					
 

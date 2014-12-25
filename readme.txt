@@ -3,8 +3,8 @@
 	Donate link: http://paratheme.com
 	Tags: T-Shirt Designer, T-Shirt, Designer, T-Shirt Designer woocommenrce, woocommenrce
 	Requires at least: 3.8
-	Tested up to: 4.0
-	Stable tag: 1.0
+	Tested up to: 4.1
+	Stable tag: 1.1
 	License: GPLv2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,6 +86,11 @@ https://www.youtube.com/watch?v=w_2qdMQqNQQ
 
 == Changelog ==
 
+	
+	= 1.1 =
+    * 25/12/2014 add - setting page.
+    * 25/12/2014 add - number of tshirt and sticker items.
+	
 	
 	= 1.0 =
     * 10/12/2014 Initial release.
