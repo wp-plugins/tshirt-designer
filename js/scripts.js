@@ -467,8 +467,9 @@ jQuery(document).ready(function($)
 			{
 				var product_id = $(this).attr("product-id");
 				var src = $(this).attr("src");
+				$('.preview-save').attr('product-id',product_id);
+				
 
-				//$('.canvas').css('background','url('+src+') no-repeat scroll 0 0 rgba(0, 0, 0, 0)');
 				$('.canvas img.main-tshirt').attr('src',src);				
 				
 				var front_img = $(this).attr("front-img");				

@@ -67,7 +67,7 @@ function tshirt_designer_display($atts, $content = null ) {
 	
 	$html .= '<div class="preview-holder"><img src="" />
 	<span class="preview-close"></span>
-	<span class="preview-save" side="front" product-id="99" url=""></span>	
+	<span class="preview-save" side="front" product-id="0" url=""></span>	
 	<span class="preview-loading" ></span>	
 	</div>';
 	$html .= '<div class="tools-input">';
